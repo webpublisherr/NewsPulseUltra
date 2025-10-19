@@ -1,0 +1,35 @@
+name: Auto News Writer
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Runs daily at 4 AM IST
+  workflow_dispatch:
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Run news generator
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node generate-news.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add posts.js
+          git commit -m "Auto-generated news post"
+          git push
