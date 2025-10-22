@@ -11,6 +11,8 @@
 <a href="index.html">
     <img src="assets/logo.png" alt="News Pulse Ultra Logo" style="height: 600px;">
   </a>
+    <img src="{{image_url}}" alt="Post image"
+     onerror="this.src='assets/images/fallback.jpg';" class="post-image">
     <input type="text" id="search" placeholder="Search news..." />
     <select id="categoryFilter"></select>
     <select id="subcategoryFilter"></select>
