@@ -1,4 +1,5 @@
 const posts = [
+  {"title":"India’s AI Startups Raise $500M","date":"2026-03-01","summary":"Indian AI firms attract global investors.","content":"Startups in Bengaluru and Hyderabad have secured major funding...","image":"https://source.unsplash.com/400x200/?ai","category":"Tech","subcategory":"AI"},
   {"title":"India’s AI Startups Raise $500M","date":"2026-02-28","summary":"Indian AI firms attract global investors.","content":"Startups in Bengaluru and Hyderabad have secured major funding...","image":"https://source.unsplash.com/400x200/?ai","category":"Tech","subcategory":"AI"},
   {"title":"India’s AI Startups Raise $500M","date":"2026-02-27","summary":"Indian AI firms attract global investors.","content":"Startups in Bengaluru and Hyderabad have secured major funding...","image":"https://source.unsplash.com/400x200/?ai","category":"Tech","subcategory":"AI"},
   {"title":"India’s AI Startups Raise $500M","date":"2026-02-26","summary":"Indian AI firms attract global investors.","content":"Startups in Bengaluru and Hyderabad have secured major funding...","image":"https://source.unsplash.com/400x200/?ai","category":"Tech","subcategory":"AI"},
